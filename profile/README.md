@@ -34,7 +34,7 @@
 - 
 - 
 
-
+## C4-Model
 
 
 
@@ -93,12 +93,11 @@ Execute...
 
 ## Instalação
 
-Instale my-project com npm
+Instale...
 
-```bash
-  npm install my-project
-  cd my-project
-```
+## Como executar
+
+Execute...
 
 ### 4. Retorna uma url de imagem
 
@@ -109,6 +108,7 @@ Instale my-project com npm
 **Retorna:**
 
 Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:id`, gerada pelo DALL-E.
+
 ## Demonstração
 
 
