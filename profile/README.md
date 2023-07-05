@@ -1,12 +1,57 @@
-## Hi there 👋
+## Chat Manager API
+Explicação da API
 
-<!--
 
-**Here are some ideas to get you started:**
+### 1. Inicia uma conversa, e retorna o id dela
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+```http
+  POST /api/chat/
+```
+**Conteúdo do *body*:**
+
+
+
+**Retorna:**
+
+| Parâmetro   | Tipo       | Descrição                                              |
+| :---------- | :--------- | :------------------------------------------------------|
+| `id`        | `string`   | Id da conversa gerado pela API, esse id é único para cada conversa iniciada.|
+
+### 2. Continua uma conversa com o mesmo contexto histórico, baseado no id da conversa
+
+```http
+  POST /api/chat/:id
+```
+| Parâmetro   | Tipo       | Descrição                                                                                          |
+| :---------- | :--------- | :--------------------------------------------------------------------------------------------------|
+| `id`        | `string`   | **Obrigatório**, Id único da conversa, gerado pela chamada `POST /api/chat/`|
+
+**body:**
+
+| Parâmetro   | Tipo       | Descrição                                                                                          |
+| :---------- | :--------- | :------------------------------------------------------------|
+| `context`       | `string`| **Obrigatório**, Resposta do usuário em texto livre|
+| `role`          | `string`| **Obrigatório**, Tipo de usuário (system \| assistant \| user)|
+| `interationType`| `string`| **Obrigatório**, Tipo de interação () (predefinida pelas regras de negócio)|
+
+### 3. Retorna uma string com o prompt para a chamada do DALL-E
+
+```http
+  POST /api/chat/prompt/:id
+```
+| Parâmetro   | Tipo       | Descrição                                                                                          |
+| :---------- | :--------- | :--------------------------------------------------------------------------------------------------|
+| `id`        | `string`   | **Obrigatório**, gera um prompt de texto em inglês com todo o contexto relacionado ao(s) produto(s) da conversa.|
+
+## Image Generator API
+
+
+### 4. Retorna uma url de imagem
+
+```http
+  POST /api/generate/
+```
+
+**Retorna:**
+
+Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:id`, gerada pelo DALL-E.
