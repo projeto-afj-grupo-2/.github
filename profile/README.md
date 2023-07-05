@@ -1,4 +1,3 @@
-
 # E-commerce xyz
 
 📚 Trabalho prático da Pós-Graduação em Arquitetura de Software Distribuído da PUC Minas, da matéria Arquitetura de Software com Framework Java mestrada pelo professor, Samuel Almeida Cardoso.
@@ -36,20 +35,22 @@
 
 ## C4-Model
 
+### Chat Web Interface 
+Explicação 
 
+#### Instalação e execução
 
-## Chat Manager API
+https://github.com/projeto-afj-grupo-2/shop-assitant-webapp#readme
+
+### Chat Manager API
 Explicação da API
 
-## Instalação
+#### Instalação e execução
 
-Instale...
 
-## Como executar
+#### Descrição dos Endpoints
 
-Execute...
-
-### 1. Inicia uma conversa, e retorna o id dela
+##### 1. Inicia uma conversa, e retorna o id dela
 
 ```http
   POST /api/chat/
@@ -63,7 +64,7 @@ Execute...
 | :---------- | :--------- | :------------------------------------------------------|
 | `id`        | `string`   | Id da conversa gerado pela API, esse id é único para cada conversa iniciada.|
 
-### 2. Continua uma conversa com o mesmo contexto histórico, baseado no id da conversa
+##### 2. Continua uma conversa com o mesmo contexto histórico, baseado no id da conversa
 
 ```http
   POST /api/chat/:id
@@ -80,7 +81,7 @@ Execute...
 | `role`          | `string`| **Obrigatório**, Tipo de usuário (system \| assistant \| user)|
 | `interationType`| `string`| **Obrigatório**, Tipo de interação () (predefinida pelas regras de negócio)|
 
-### 3. Retorna uma string com o prompt para a chamada do DALL-E
+##### 3. Retorna uma string com o prompt para a chamada do DALL-E
 
 ```http
   POST /api/chat/prompt/:id
@@ -89,17 +90,15 @@ Execute...
 | :---------- | :--------- | :--------------------------------------------------------------------------------------------------|
 | `id`        | `string`   | **Obrigatório**, gera um prompt de texto em inglês com todo o contexto relacionado ao(s) produto(s) da conversa.|
 
-## Image Generator API
+### Image Generator API
 
-## Instalação
+#### Instalação e execução
 
-Instale...
 
-## Como executar
 
-Execute...
+#### Descrição dos Endpoints
 
-### 4. Retorna uma url de imagem
+##### 4. Retorna uma url de imagem
 
 ```http
   POST /api/generate/
@@ -110,7 +109,6 @@ Execute...
 Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:id`, gerada pelo DALL-E.
 
 ## Demonstração
-
 
 
 ## Melhorias
