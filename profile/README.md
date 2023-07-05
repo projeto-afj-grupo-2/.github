@@ -40,13 +40,14 @@ Explicação
 
 #### Instalação e execução
 
-https://github.com/projeto-afj-grupo-2/shop-assitant-webapp#readme
+[README Interface](https://github.com/projeto-afj-grupo-2/shop-assitant-webapp#readme)
 
 ### Chat Manager API
 Explicação da API
 
 #### Instalação e execução
 
+[README Chat Manager](https://github.com/projeto-afj-grupo-2/gptprojectdemo#readme)
 
 #### Descrição dos Endpoints
 
@@ -94,7 +95,7 @@ Explicação da API
 
 #### Instalação e execução
 
-
+[README Image Generator](https://github.com/projeto-afj-grupo-2/ai-request-generator#readme)
 
 #### Descrição dos Endpoints
 
