@@ -23,6 +23,27 @@
 - Questionar o cliente sobre o estilo e informações pessoais
 - Geração de imagem de manequim, utilizada para a melhor visualização do produto
 
+
+## Problemas
+
+- Entender o contexto correto de assistente virtual de uma loja de camiseta, blusa e calça, em certos momentos ele gerava uma simulação de conversa entre um vendendor e um cliente
+
+- Lidar com a continuidade de contexto, visto que precisamos de um certo passo-a-passo para que seja realizada a venda de cada tipo de produto
+
+- Manter o entendimento de cada passo-a-passo (em certos momentos o chat oferecia produtos que o contexto não apontou disponibilidade. Ex.: Acessórios, brincos, etc.)
+
+- Problemas de conexão com a API da OpenAI
+
+## Soluções
+
+- Enviar um contexto inicial, com um enunciado bem escrito, usando a `role = system`
+
+- Criar um passo-a-passo de perguntas restritas e lineares, para cada caso, que chamamos de `interactionType`
+
+- Melhorar o enunciado (tentativa e erro)
+
+- ¯\_(ツ)_/¯ (Aqui poderiam ser feitos tratamentos de conexão nos casos de 500, ou até usar o próprio ChatGPT para checar se a resposta dele fez sentido ou não, além disso tratamentos de acordo com o `finish_reason` que a própria API retorna. (FYK - [Documentação OpenAI > Finish Reason](https://platform.openai.com/docs/guides/gpt/chat-completions-response-format))
+
 ## Stacks utilizadas
 
 **Front-end:** React-js, Node 18, Vite
@@ -114,25 +135,6 @@ Explicação da API
 
 Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:id`, gerada pelo DALL-E.
 
-## Problemas
-
-- Entender o contexto correto de assistente virtual de uma loja de camiseta, blusa e calça, em certos momentos ele gerava uma simulação de conversa entre um vendendor e um cliente
-
-- Lidar com a continuidade de contexto, visto que precisamos de um certo passo-a-passo para que seja realizada a venda de cada tipo de produto
-
-- Manter o entendimento de cada passo-a-passo (em certos momentos o chat oferecia produtos que o contexto não apontou disponibilidade. Ex.: Acessórios, brincos, etc.)
-
-- Problemas de conexão com a API da OpenAI
-
-## Soluções
-
-- Enviar um contexto inicial, com um enunciado bem escrito, usando a `role = system`
-
-- Criar um passo-a-passo de perguntas restritas e lineares, para cada caso, que chamamos de `interactionType`
-
-- Melhorar o enunciado (tentativa e erro)
-
-- ¯\_(ツ)_/¯ (Aqui poderiam ser feitos tratamentos de conexão nos casos de 500, ou até usar o próprio ChatGPT para checar se a resposta dele fez sentido ou não, além disso tratamentos de acordo com o `finish_reason` que a própria API retorna. (FYK - [Documentação OpenAI > Finish Reason](https://platform.openai.com/docs/guides/gpt/chat-completions-response-format))
 
 ## Demonstração
 
