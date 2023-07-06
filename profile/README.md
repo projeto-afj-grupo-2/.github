@@ -4,7 +4,12 @@
 
 ## Integrantes:
 
-
+- Augusto Custodio Vicente
+- Brayan Patrick Jardim Farias
+- Carolina Fernandes Serrano Lopes
+- Celso Henrique Alvarenga Barros
+- Luiz Gabriel Santos Fernandes
+- Savastane Santana de Andrade
 
 ## 🎯 Objetivos 
 
