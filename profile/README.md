@@ -27,11 +27,6 @@
 
 - OpenAI: https://platform.openai.com/docs/introduction/overview
 - DALL-E: https://platform.openai.com/docs/guides/images/introduction
-- 
-- 
-- 
-- 
-- 
 
 ## C4-Model
 
