@@ -127,7 +127,7 @@ Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:
 
 - Melhorar o enunciado (tentativa e erro)
 
-- ¯\_(ツ)_/¯ (Aqui poderiam ser feitos tratamentos de conexão nos casos de 500, ou até usar o próprio ChatGPT para checar se a resposta dele fez sentido ou não, além disso tratamentos de acordo com o `finish_reason` que a própria API retorna. (FYK - [Documentação OpenAI > Finish Reason](https://platform.openai.com/docs/guides/gpt/chat-completions-api#:~:text=Every%20response%20will%20include))
+- ¯\_(ツ)_/¯ (Aqui poderiam ser feitos tratamentos de conexão nos casos de 500, ou até usar o próprio ChatGPT para checar se a resposta dele fez sentido ou não, além disso tratamentos de acordo com o `finish_reason` que a própria API retorna. (FYK - [Documentação OpenAI > Finish Reason](https://platform.openai.com/docs/guides/gpt/chat-completions-response-format))
 
 ## Demonstração
 
