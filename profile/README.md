@@ -24,7 +24,7 @@
 - Geração de imagem de manequim, utilizada para a melhor visualização do produto
 
 
-## Problemas
+## ❌ Problemas
 
 - Entender o contexto correto de assistente virtual de uma loja de camiseta, blusa e calça, em certos momentos ele gerava uma simulação de conversa entre um vendendor e um cliente
 
@@ -34,7 +34,7 @@
 
 - Problemas de conexão com a API da OpenAI
 
-## Soluções
+## 💡 Soluções
 
 - Enviar um contexto inicial, com um enunciado bem escrito, usando a `role = system`
 
