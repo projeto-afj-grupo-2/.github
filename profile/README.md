@@ -35,6 +35,8 @@
 
 ## C4-Model
 
+[Insert image](https://miro.com/app/board/uXjVM6VZXiw=/)
+
 ### Chat Web Interface 
 Explicação 
 
@@ -108,6 +110,12 @@ Explicação da API
 **Retorna:**
 
 Array de url de imagem baseada no prompt retornado pelo `POST /api/chat/prompt/:id`, gerada pelo DALL-E.
+
+## Problemas
+
+- Lidar com a continuidade de contexto, visto que precisamos de um certo passo-a-passo para que seja realizada a venda de cada tipo de produto
+- Conexão com a API da OpenAI
+- Manter o entendimento de cada passo-a-passo (em certos momentos o chat oferecia produtos que o contexto não apontou disponibilidade. Ex.: Acessórios, brincos, etc.)
 
 ## Demonstração
 
