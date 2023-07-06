@@ -1,4 +1,4 @@
-# E-commerce xyz
+# 🛒 E-commerce xyz
 
 📚 Trabalho prático da Pós-Graduação em Arquitetura de Software Distribuído da PUC Minas, da matéria Arquitetura de Software com Framework Java mestrada pelo professor, Samuel Almeida Cardoso.
 
