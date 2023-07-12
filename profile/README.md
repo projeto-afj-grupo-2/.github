@@ -1,4 +1,4 @@
-# 🛒 E-commerce xyz
+# 🛒Grupo 2: Chatbot para atendimento ao cliente de uma loja de varejo online.
 
 📚 Trabalho prático da Pós-Graduação em Arquitetura de Software Distribuído da PUC Minas, da matéria Arquitetura de Software com Framework Java mestrada pelo professor, Samuel Almeida Cardoso.
 
@@ -59,7 +59,7 @@
 
 ## C4-Model
 
-[Insert image](https://miro.com/app/board/uXjVM6VZXiw=/)
+[miro](https://miro.com/app/board/uXjVM6VZXiw=/)
 
 ### Chat Web Interface 
 Explicação 
